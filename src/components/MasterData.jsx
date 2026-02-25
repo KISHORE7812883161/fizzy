@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Database, Plus, Search, Trash2, Edit2, Clock, Activity, Layers, Zap, X, Palette, Settings, Cpu, GitBranch, Box, Navigation, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const API_URL = "http://localhost:8000/api"
+const API_URL = import.meta.env.PROD ? "/api" : "http://localhost:8000/api"
 
 // --- Helper Components ---
 
